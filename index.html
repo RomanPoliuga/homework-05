@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Гра "Натисни клавішу" + Графік</title>
+  
+  <!-- PNotify -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@pnotify/core/dist/PNotify.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@pnotify/core/dist/BrightTheme.css" />
+  <script src="https://cdn.jsdelivr.net/npm/@pnotify/core/dist/PNotify.js"></script>
+  
+  <!-- Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="game">
+    <h2>🎮 Гра "Натисни правильну клавішу"</h2>
+    <p>Натисніть клавішу: <span id="key"></span></p>
+    <button id="new-game">Нова гра</button>
+  </div>
+
+  <div id="chart">
+    <h2>📊 Статистика продажів</h2>
+    <canvas id="sales-chart"></canvas>
+  </div>
+
+  <script src="game.js"></script>
+  <script src="chart.js"></script>
+</body>
+</html>
